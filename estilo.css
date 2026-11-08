@@ -1,0 +1,27 @@
+:root{
+  --fondo:#0A0C0F; --panel:#161A1F; --crema:#EDE6D6; --gris:#8C9298;
+  --rojo:#E23B2E; --turquesa:#3FB6B2; --papel:#D6BC88;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--fondo);color:var(--crema);font-family:Inter,system-ui,sans-serif;line-height:1.6;font-size:17px}
+a{color:var(--turquesa)}
+.envoltorio{max-width:860px;margin:0 auto;padding:0 20px}
+header.cab{display:flex;align-items:center;gap:14px;padding:18px 0;border-bottom:1px solid var(--panel)}
+header.cab img{width:48px;height:48px}
+header.cab a.marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--crema)}
+header.cab .nombre{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:700;font-size:22px}
+header.cab nav{margin-left:auto;display:flex;gap:18px;font-size:15px}
+header.cab nav a{color:var(--gris);text-decoration:none}
+header.cab nav a:hover{color:var(--crema)}
+.portada{width:100%;display:block;border-radius:10px;margin:28px 0 8px}
+h1,h2{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:700;line-height:1.2}
+h1{font-size:40px;margin:28px 0 6px}
+h2{font-size:26px;margin:34px 0 8px;color:var(--papel)}
+.lema{color:var(--rojo);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:14px}
+.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
+.tarjeta{background:var(--panel);border-radius:10px;padding:16px 18px}
+.tarjeta b{display:block;color:var(--papel);margin-bottom:4px}
+.boton{display:inline-block;background:var(--rojo);color:var(--crema);text-decoration:none;font-weight:600;padding:12px 22px;border-radius:8px;margin:12px 0}
+footer{border-top:1px solid var(--panel);margin-top:48px;padding:20px 0 40px;color:var(--gris);font-size:14px}
+@media (max-width:560px){h1{font-size:30px} header.cab .nombre{font-size:18px} header.cab nav{gap:12px}}
